@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/numberButton"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/numberButton"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tvClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                android:text="CE"
+                tools:ignore="HardcodedText,NestedWeights"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/tvOpen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                android:text="("
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/tvClose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text=")"
+                tools:ignore="HardcodedText" />
+
+
+            <Button
+                android:id="@+id/tvDivide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                tools:ignore="HardcodedText"
+                android:text="/" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tvSeven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvEight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="8"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvNine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="9"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvMul"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                tools:ignore="HardcodedText"
+                android:text="*"
+                style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/tvFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights"
+                android:text="4"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="5"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvSix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="6"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                tools:ignore="HardcodedText"
+                android:text="-"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/tvOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights"
+                android:text="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="2"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="3"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="0.5dp"
+                tools:ignore="HardcodedText"
+                android:text="+"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tvDot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights"
+                android:text="."
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/tvZero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText"
+                android:text="0"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+
+            <Button
+                android:id="@+id/tvEquals"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_margin="0.5dp"
+                android:text="="
+                android:layout_weight="2"
+                tools:ignore="HardcodedText,NestedWeights"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

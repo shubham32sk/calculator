@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="actionButton">#FF4F00</color>
+    <color name="violet">#8A2BE6</color>
+    <color name="actionButton">#FF9F00</color>
     <color name="numberButton">#455A64</color>
+    <color name="white">#FFFFFF</color>
 </resources>

@@ -8,29 +8,45 @@
     android:background="@android:color/black"
     android:orientation="vertical">
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="start"
+        android:text=" CALCULATOR"
+        android:paddingRight="44dp"
+        android:textColor="@color/white"
+        android:background="@color/violet"
+        android:textSize="40sp" />
+
     <TextView
         android:id="@+id/tvExpression"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:ellipsize="start"
+        android:layout_marginTop="10dp"
         android:gravity="end"
+        android:hint="00"
+        android:paddingRight="20dp"
         android:singleLine="true"
-        android:textColor="@color/numberButton"
+        android:textColor="@color/actionButton"
         android:textSize="40sp" />
 
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:ellipsize="end"
+        android:layout_marginTop="10dp"
         android:gravity="end"
+        android:hint="00"
+        android:paddingRight="20dp"
         android:singleLine="true"
-        android:textColor="@color/numberButton"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -41,56 +57,55 @@
 
             <Button
                 android:id="@+id/tvClear"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:layout_margin="0.5dp"
-                android:text="CE"
-                tools:ignore="HardcodedText,NestedWeights"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:gravity="center"
+                android:text="AC"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
                 android:id="@+id/tvOpen"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
                 android:layout_weight="1"
-                android:layout_margin="0.5dp"
+                android:background="@color/actionButton"
+                android:gravity="center"
                 android:text="("
-                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
                 tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvClose"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="0.5dp"
-                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text=")"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
                 tools:ignore="HardcodedText" />
 
 
             <Button
                 android:id="@+id/tvDivide"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="0.5dp"
-                tools:ignore="HardcodedText"
-                android:text="/" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
 
 
         </LinearLayout>
@@ -103,6 +118,7 @@
 
             <Button
                 android:id="@+id/tvSeven"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
@@ -111,47 +127,46 @@
                 android:text="7"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText,NestedWeights"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
                 android:id="@+id/tvEight"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="8"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="8"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvNine"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="9"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="9"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvMul"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="0.5dp"
-                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="*"
-                style="?android:attr/buttonBarButtonStyle"/>
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,55 +178,55 @@
 
             <Button
                 android:id="@+id/tvFour"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="4"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText,NestedWeights"
-                android:text="4"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
                 android:id="@+id/tvFive"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="5"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="5"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvSix"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="6"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="6"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvMinus"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="0.5dp"
-                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="-"
-                style="?android:attr/buttonBarButtonStyle"/>
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -224,55 +239,55 @@
 
             <Button
                 android:id="@+id/tvOne"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="1"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText,NestedWeights"
-                android:text="1"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
                 android:id="@+id/tvTwo"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="2"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="2"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvThree"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="3"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="3"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/tvPlus"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="0.5dp"
-                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="+"
-                style="?android:attr/buttonBarButtonStyle"/>
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -284,43 +299,56 @@
 
             <Button
                 android:id="@+id/tvDot"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="."
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText,NestedWeights"
-                android:text="."
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
                 android:id="@+id/tvZero"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="0.5dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:text="0"
                 android:textColor="@android:color/white"
                 android:textSize="21sp"
-                tools:ignore="HardcodedText"
-                android:text="0"
-                style="?android:attr/buttonBarButtonStyle"/>
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/tvBack"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CLEAR"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
 
 
             <Button
                 android:id="@+id/tvEquals"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textSize="21sp"
-                android:textColor="@android:color/white"
-                android:gravity="center"
                 android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="="
-                android:layout_weight="2"
-                tools:ignore="HardcodedText,NestedWeights"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText,NestedWeights" />
 
         </LinearLayout>
 

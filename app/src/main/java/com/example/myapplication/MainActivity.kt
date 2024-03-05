@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                // tvExpression.text=tvExpression.text.substring(0,(tvExpression.text.toString().length)-1)
                 val new=tvExpression.text.dropLast(1)
                 tvExpression.text=new
+                tvResult.text=""
             }
         }
 
